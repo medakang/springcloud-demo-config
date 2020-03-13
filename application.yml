@@ -1,7 +1,7 @@
 spring:
   profiles:
     active:
-      - dev
+      - test
 ---
 spring:
   profiles: dev #开发环境
@@ -11,5 +11,5 @@ spring:
 spring:
   profiles: test #测试环境
   application:
-    name: sprincloud-config-kang-test
+    name: springcloud-zuul
 #请保存UTF-8格式
