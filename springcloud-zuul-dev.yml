@@ -16,5 +16,5 @@ zuul:
     mydept.path: /payment/get/**  #访问得地址
   ignored-services: cloud-payment-service #忽略通过服务名可以访问微服务(添加完成之后不能通过服务名访问微服务)
   servlet-path: /
-ipaddr: 
-    - eureka7001.com
+ip:
+  addr: ["eureka7001.com"]
