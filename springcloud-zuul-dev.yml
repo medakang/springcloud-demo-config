@@ -2,7 +2,7 @@ server:
   port: 9527
 spring:
   application:
-    name: springcloud-zuul-gateway
+    name: springcloud-zuul-gateway444
 eureka:
   client:
     register-with-eureka: true #表示是否将自己注册进EurekaServer默认为true
@@ -16,6 +16,4 @@ zuul:
     mydept.path: /payment/get/**  #访问得地址
   ignored-services: cloud-payment-service #忽略通过服务名可以访问微服务(添加完成之后不能通过服务名访问微服务)
   servlet-path: /
-info: 
-  ipAddr:
-    - 127.0.0.1
+  ipAddr: ["127.0.0.1"]
